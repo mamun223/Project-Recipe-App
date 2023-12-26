@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// App.jsx
+
+import React, { useState } from "react";
+import "./App.css";
+import RecipeCreate from "./RecipeCreate";
+import RecipeList from "./RecipeList";
+import RecipeData from "./RecipeData";
 
 function App() {
+  const [recipes, setRecipes] = useState(RecipeData);
+
+  const addRecipe = (newRecipe) => {
+    setRecipes([...recipes, newRecipe]);
+  };
+
+  const deleteRecipe = (index) => {
+    const updatedRecipes = [...recipes];
+    updatedRecipes.splice(index, 1);
+    setRecipes(updatedRecipes);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Delicious Food Recipes</h1>
       </header>
+      <RecipeList recipes={recipes} deleteRecipe={deleteRecipe} />
+      <RecipeCreate addRecipe={addRecipe} />
     </div>
   );
 }

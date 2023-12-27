@@ -49,10 +49,9 @@ function RecipeCreate({ addRecipe }) {
 
   return (
     <form name="create" onSubmit={handleSubmit}>
-      <table>
         <tbody>
           <tr>
-            <td>
+            <td class="input">
               <input
                 type="text"
                 name="name"
@@ -62,7 +61,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="name"
               />
             </td>
-            <td>
+            <td class="input">
               <input
                 type="text"
                 name="cuisine"
@@ -72,7 +71,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="cuisine"
               />
             </td>
-            <td>
+            <td class="input">
               <input
                 type="url"
                 name="photo"
@@ -82,7 +81,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="url"
               />
             </td>
-            <td>
+            <td class="ing">
               <textarea
                 name="ingredients"
                 value={recipe.ingredients}
@@ -92,7 +91,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="ingredients"
               />
             </td>
-            <td>
+            <td class="prep">
               <textarea
                 name="preparation"
                 value={recipe.preparation}
@@ -102,12 +101,11 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="preparation"
               />
             </td>
-            <td>
+            <td class="create">
               <button type="submit">Create</button>
             </td>
           </tr>
         </tbody>
-      </table>
     </form>
   );
 }

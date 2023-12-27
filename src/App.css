@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC");
 
 .App {
   padding: 1em;
@@ -10,7 +10,7 @@ label {
 }
 
 h1 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: "Playfair Display SC", serif;
   font-size: 64px;
   margin-bottom: 20px;
 }
@@ -23,11 +23,12 @@ header {
 /* typography */
 
 html {
-  font-family: 'helvetica neue', sans-serif;
+  font-family: "helvetica neue", sans-serif;
 }
 
-thead th, tfoot th {
-  font-family: 'Rock Salt';
+thead th,
+tfoot th {
+  font-family: "Rock Salt";
 }
 
 th {
@@ -37,13 +38,30 @@ th {
 
 td {
   letter-spacing: 1px;
-  overflow-x:hidden;
-  overflow-y:hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   font-size: 12px;
   padding: 10px;
   text-align: center;
 }
 
+.input {
+  padding-right: 25px;
+}
+
+.ing {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.prep {
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+.create {
+  padding-right: 60px;
+}
 /* table */
 
 /* Set the width for the preparation and ingredients columns to 30% */
@@ -77,12 +95,11 @@ img {
   height: 100%;
 }
 
-
 table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  overflow:hidden;
+  overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -130,6 +147,5 @@ table {
 }
 
 /* Column Size for thead */
-
 
 /* Column size for tbody */

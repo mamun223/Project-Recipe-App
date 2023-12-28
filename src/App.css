@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC");
 
+
+
 .App {
   padding: 1em;
 }
@@ -45,24 +47,17 @@ td {
   text-align: center;
 }
 
-.input {
-  padding-right: 25px;
+.form-row {
+  display: flex;
 }
 
-.ing {
-  padding-left: 0px;
-  margin-left: 0px;
+.form-col {
+  flex: 1;
 }
 
-.prep {
-  padding-left: 0px;
-  padding-right: 40px;
+.form-mid {
+  padding-top: 35px;
 }
-
-.create {
-  padding-right: 60px;
-}
-/* table */
 
 /* Set the width for the preparation and ingredients columns to 30% */
 td:nth-child(5),
@@ -110,41 +105,20 @@ table {
   text-overflow: ellipsis;
 }
 
-.form-row {
-  display: flex;
-  align-items: right;
-  margin-bottom: 10px; /* Adjust margin as needed */
+/* ... (previous styles) */
+
+
+
+
+.form-container label input,
+.form-container label textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 5px 0;
 }
 
-.form-row input,
-.form-row textarea {
-  flex: 1;
-}
-
-.form-row button {
-  margin-top: 10px; /* Adjust margin as needed */
-}
-
-/* Adjust input widths based on table heading widths */
-.form-row [name="name"] {
-  width: 100%; /* or adjust as needed */
-}
-
-.form-row [name="cuisine"] {
-  width: 100%; /* or adjust as needed */
-}
-
-.form-row [name="photo"] {
-  width: 100%; /* or adjust as needed */
-}
-
-.form-row [name="ingredients"] {
-  width: 100%; /* or adjust as needed */
-}
-
-.form-row [name="preparation"] {
-  width: 100%; /* or adjust as needed */
-}
+/* ... (rest of the styles) */
 
 /* Column Size for thead */
 

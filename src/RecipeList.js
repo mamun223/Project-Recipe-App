@@ -1,9 +1,9 @@
-// RecipeList.jsx
+
 
 import React from "react";
 import RecipeItem from "./RecipeItem";
 
-function RecipeList({ recipes, deleteRecipe }) {
+function RecipeList({ recipes, deleteRecipe}) {
   return (
     <div className="recipe-list">
       <table>
@@ -32,3 +32,4 @@ function RecipeList({ recipes, deleteRecipe }) {
 }
 
 export default RecipeList;
+

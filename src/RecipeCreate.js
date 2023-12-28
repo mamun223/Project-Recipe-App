@@ -1,4 +1,4 @@
-// RecipeCreate.jsx
+// // RecipeCreate.jsx
 
 import React, { useState } from "react";
 import "./App.css";
@@ -49,10 +49,11 @@ function RecipeCreate({ addRecipe }) {
 
   return (
     <form name="create" onSubmit={handleSubmit}>
-        <tbody>
-          <tr>
-            <td class="input">
-              <input
+      <table>
+      <tbody>
+      <tr class="form-row">
+            <td class="form-col form-mid">
+              <input 
                 type="text"
                 name="name"
                 value={recipe.name}
@@ -61,7 +62,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="name"
               />
             </td>
-            <td class="input">
+            <td class="form-col form-mid">
               <input
                 type="text"
                 name="cuisine"
@@ -71,7 +72,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="cuisine"
               />
             </td>
-            <td class="input">
+            <td class="form-col form-mid">
               <input
                 type="url"
                 name="photo"
@@ -81,7 +82,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="url"
               />
             </td>
-            <td class="ing">
+            <td class="form-col">
               <textarea
                 name="ingredients"
                 value={recipe.ingredients}
@@ -91,7 +92,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="ingredients"
               />
             </td>
-            <td class="prep">
+            <td class="form-col">
               <textarea
                 name="preparation"
                 value={recipe.preparation}
@@ -101,13 +102,18 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="preparation"
               />
             </td>
-            <td class="create">
+            <td class="form-col form-mid">
               <button type="submit">Create</button>
             </td>
           </tr>
-        </tbody>
-    </form>
+      </tbody>
+      </table>
+      
+     </form>
   );
+
 }
 
 export default RecipeCreate;
+
+
